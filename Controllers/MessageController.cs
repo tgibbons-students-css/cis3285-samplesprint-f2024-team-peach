@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Humanizer;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CIS3285_Unit3Sample_2024.Controllers
@@ -12,18 +13,21 @@ namespace CIS3285_Unit3Sample_2024.Controllers
         }
 
         // GET: MessageController/Details/5
+        //As a message reading user, I want to view a list of rooms that represent conversations - Joe Tschida
         public ActionResult Details(int id)
         {
             return View();
         }
 
         // GET: MessageController/Create
+        //As a message reading user, I want to view a list of rooms that represent conversations - Joe Tschida
         public ActionResult Create()
         {
             return View();
         }
 
         // POST: MessageController/Create
+        //As a message reading user, I want to view a list of rooms that represent conversations - Joe Tschida
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)

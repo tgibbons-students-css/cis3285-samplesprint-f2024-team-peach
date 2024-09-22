@@ -12,12 +12,14 @@ namespace CIS3285_Unit3Sample_2024.Controllers
         }
 
         // GET: RoomController/Details/5
+        // Changes Sprint 1 -- I want to create rooms for categorizing conversations -- Joe Tschida
         public ActionResult Details(int id)
         {
             return View();
         }
 
         // GET: RoomController/Create
+        // Changes Sprint 1 -- I want to create rooms for categorizing conversations -- Joe Tschida
         public ActionResult Create()
         {
             return View();
@@ -39,6 +41,7 @@ namespace CIS3285_Unit3Sample_2024.Controllers
         }
 
         // GET: RoomController/Edit/5
+        // Changes Sprint 1 -- I want to create rooms for categorizing conversations -- Joe Tschida
         public ActionResult Edit(int id)
         {
             return View();
@@ -60,6 +63,7 @@ namespace CIS3285_Unit3Sample_2024.Controllers
         }
 
         // GET: RoomController/Delete/5
+        // Changes Sprint 1 -- I want to create rooms for categorizing conversations -- Joe Tschida
         public ActionResult Delete(int id)
         {
             return View();
