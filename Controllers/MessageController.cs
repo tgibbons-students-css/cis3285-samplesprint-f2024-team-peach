@@ -13,21 +13,24 @@ namespace CIS3285_Unit3Sample_2024.Controllers
         }
 
         // GET: MessageController/Details/5
-        //As a message reading user, I want to view a list of rooms that represent conversations - Joe Tschida
+        // Changes Sprint 1 -- As a message reading user, I want to view a list of rooms that represent conversations - Joe Tschida
+        // Changes Sprint 1 -- As a message reading user, I want to filter message content so that it is appropriate - Joe Tschida
         public ActionResult Details(int id)
         {
             return View();
         }
 
         // GET: MessageController/Create
-        //As a message reading user, I want to view a list of rooms that represent conversations - Joe Tschida
+        // Changes Sprint 1 -- As a message reading user, I want to view a list of rooms that represent conversations - Joe Tschida
+        // Changes Sprint 1 -- As a message reading user, I want to filter message content so that it is appropriate - Joe Tschida
         public ActionResult Create()
         {
             return View();
         }
 
         // POST: MessageController/Create
-        //As a message reading user, I want to view a list of rooms that represent conversations - Joe Tschida
+        // Changes Sprint 1 -- As a message reading user, I want to view a list of rooms that represent conversations - Joe Tschida
+        // Changes Sprint 1 -- As a system administrator, I want to serve hundreds of users concurrently. - Joe Tschida
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
@@ -43,12 +46,14 @@ namespace CIS3285_Unit3Sample_2024.Controllers
         }
 
         // GET: MessageController/Edit/5
+        // Changes Sprint 1 -- As a system administrator, I want to serve hundreds of users concurrently. - Joe Tschida
         public ActionResult Edit(int id)
         {
             return View();
         }
 
         // POST: MessageController/Edit/5
+        // Changes Sprint 1 -- As a system administrator, I want to serve hundreds of users concurrently. - Joe Tschida
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)

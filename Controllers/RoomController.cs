@@ -6,6 +6,7 @@ namespace CIS3285_Unit3Sample_2024.Controllers
     public class RoomController : Controller
     {
         // GET: RoomController
+        // Changes Sprint 1 -- As a message reading user, I want to filter message content so that it is appropriate -- Joe Tschida
         public ActionResult Index()
         {
             return View();
@@ -20,12 +21,15 @@ namespace CIS3285_Unit3Sample_2024.Controllers
 
         // GET: RoomController/Create
         // Changes Sprint 1 -- I want to create rooms for categorizing conversations -- Joe Tschida
+        // Changes Sprint 1 -- As a message reading user, I want to filter message content so that it is appropriate -- Joe Tschida
+
         public ActionResult Create()
         {
             return View();
         }
 
         // POST: RoomController/Create
+        // Changes Sprint 1 -- As a system admin, I want to be able to set a limit to the number of users in any one room -- Joe Tschida
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
@@ -48,6 +52,7 @@ namespace CIS3285_Unit3Sample_2024.Controllers
         }
 
         // POST: RoomController/Edit/5
+        // Changes Sprint 1 -- As a system admin, I want to be able to set a limit to the number of users in any one room -- Joe Tschida
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
